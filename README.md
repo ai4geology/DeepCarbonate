@@ -3,7 +3,7 @@
 This project is a deep learning framework for classifying thin section images into 22 different rock types. The code is organized to support training, validation, and testing of various models, with robust data handling and evaluation metrics.
 
 ## Project Structure
-
+```
 thin_section_classification/
 ├── carbonate_1/                # Dataset folder
 │   ├── train/                  # Training images
@@ -16,6 +16,7 @@ thin_section_classification/
 ├── model.py                    # Model definitions (ResNet, DenseNet, etc.)
 ├── trainer.py                  # Training and evaluation logic
 └── README.md                   # Project documentation
+```
 
 ## Getting Started
 
@@ -79,7 +80,7 @@ After training, the best model will be saved in the experiments folder. You can 
 - Top-1 and Top-5 Accuracy
 - Confusion Matrix
 
-### Example Output
+### 7. Example Output
 
 Epoch 1/50
 Training Set - Loss: 1.2345 | Accuracy: 45.67%
@@ -92,7 +93,7 @@ Detailed Validation Metrics:
 • Top-1 Accuracy: 56.78%
 • Top-5 Accuracy: 80.12%
 
-## Contact
+## 8. Cite
 
 For any questions or issues, please contact the project maintainer.
 
