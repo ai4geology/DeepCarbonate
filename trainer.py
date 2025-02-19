@@ -159,7 +159,7 @@ def train_model(model, loaders, num_classes, epochs, lr=0.01, early_stopping_pat
         
         val_metrics = evaluate_metrics(val_tracker, 'val')
         
-        # 打印指标
+        # Print metrics
         print(f"\nEpoch {epoch+1}/{epochs}")
         print(f"Training Set - Loss: {train_metrics['loss']:.4f} | Acc: {train_metrics['accuracy']:.2%}")
         print(f"Validation Set - Loss: {val_metrics['loss']:.4f} | Acc: {val_metrics['accuracy']:.2%}")
@@ -171,12 +171,12 @@ def train_model(model, loaders, num_classes, epochs, lr=0.01, early_stopping_pat
         print(f"• Top-1 Acc: {val_metrics['top1_acc']:.2f}%")
         print(f"• Top-5 Acc: {val_metrics['top5_acc']:.2f}%")
         
-        # 早停检查
+        # Early stop
         if early_stopping(val_metrics['accuracy'], model, 'best_model.pth'):
             print("\nEarly stop trigger, training ends early")
             break
     
-    # 最终测试
+    # Test
     model.load_state_dict(torch.load('best_model.pth'))
     test_tracker = MetricTracker(num_classes)
     

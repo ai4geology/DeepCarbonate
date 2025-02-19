@@ -4,7 +4,7 @@ from sklearn.metrics import confusion_matrix
 
 def calculate_topk_accuracy(outputs, labels, k):
     """
-    计算Top-k准确率
+    Calculate Top-k accuracy
     """
     _, pred = outputs.topk(k, 1, True, True)
     pred = pred.t()
@@ -13,19 +13,19 @@ def calculate_topk_accuracy(outputs, labels, k):
 
 def calculate_metrics(outputs, labels, num_classes):
     """
-    计算准确率、召回率、精确率、F1分数和Top-k准确率
+    Calculate accuracy, recall, precision, F1 score, and Top-k accuracy
     """
     _, preds = torch.max(outputs, 1)
     labels = labels.cpu().numpy()
     preds = preds.cpu().numpy()
 
-    # 准确率
+    # Accuracy
     accuracy = (preds == labels).mean() * 100
 
-    # 召回率、精确率、F1分数
+    # Recall, Precision, F1 score
     precision, recall, f1, _ = score(labels, preds, average='weighted')
 
-    # Top-1和Top-5准确率
+    # Top-1 and Top-5 accuracy
     top1 = calculate_topk_accuracy(outputs, labels, k=1)
     top5 = calculate_topk_accuracy(outputs, labels, k=5)
 
@@ -33,7 +33,7 @@ def calculate_metrics(outputs, labels, num_classes):
 
 def calculate_confusion_matrix(outputs, labels, num_classes):
     """
-    计算混淆矩阵
+    Calculate confusion matrix
     """
     _, preds = torch.max(outputs, 1)
     preds = preds.cpu().numpy()
