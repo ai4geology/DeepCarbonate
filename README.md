@@ -93,7 +93,18 @@ Detailed Validation Metrics:
 • Top-1 Accuracy: 56.78%
 • Top-5 Accuracy: 80.12%
 
-## 8. Cite
+## 8. Contribution
+
+This project is a collaborative effort. Below are the contributors and their specific roles:
+
+- **[Keran Li](#)**  
+  ![Keran Li](./source/img/your_photo.jpg)  
+  *Project Lead & Developer*  
+  - Designed the overall architecture of the project.  
+  - Implemented the Deep Learning frameworks.  
+  - Curated and organized the dataset.
+  
+## 9. Cite
 
 For any questions or issues, please contact the project maintainer.
 
