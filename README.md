@@ -5,7 +5,7 @@
 ##  DeepCarbonate: A Dataset and Benchmark of Carbonate Thin-Section Images for Deep Learning
 </div>
 
-Keran Li<sup>a,1,2</sup>, Jinmin Song<sup>a,1</sup>, Zhaoyi Zhang<sup>a,1</sup>, Shan Ren<sup>a,1</sup>, Yang Lan<sup>b,1</sup>, Di Yang<sup>a</sup>, Zhiwu Li<sup>a</sup>, Shugen Liu<sup>a</sup>, Chunqiao Yan<sup>a</sup>, Xin Jin<sup>a</sup>, Shaohai Yang<sup>a</sup>, Jiaxin Guo<sup>a</sup>
+Keran Li<sup>a,1,2</sup>, Jinmin Song<sup>a,1,*</sup>, Zhaoyi Zhang<sup>a,1</sup>, Shan Ren<sup>a,1</sup>, Yang Lan<sup>b,1</sup>, Di Yang<sup>a</sup>, Zhiwu Li<sup>a</sup>, Shugen Liu<sup>a</sup>, Chunqiao Yan<sup>a</sup>, Xin Jin<sup>a</sup>, Shaohai Yang<sup>a</sup>, Jiaxin Guo<sup>a</sup>
 
 <sup>a</sup>State Key Laboratory of Oil and Gas Reservoir Geology and Exploitation, Chengdu University of 
 Technology, Chengdu 610059, China
